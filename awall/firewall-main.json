@@ -1,0 +1,18 @@
+{
+    "description": "main firewall configuration",
+
+    "zone": {
+        "WAN": { "iface": "eth0" },
+        "LAN": { "iface": "eth1" }
+    },
+
+    "policy": [
+        { "in": "_fw", "action": "accept" },
+        { "in": "LAN", "out": "WAN", "action": "accept" },
+        { "in": "LAN", "out": "_fw", "action": "accept" }
+    ],
+
+    "snat": [
+        { "out": "WAN" }
+    ]
+}

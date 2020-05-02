@@ -1,0 +1,9 @@
+{
+    "description": "allow ping",
+
+    "filter": [{
+        "in": "LAN",
+        "service": "ping",
+        "action": "accept"
+    }]
+}
