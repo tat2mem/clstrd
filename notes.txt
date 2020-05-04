@@ -1,9 +1,2 @@
-echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
-rc-service sshd restart
-
-apk add -u awall
-apk add -u dhcp
-
-rc-update add dhcpd
-rc-service dhcpd start
-rc-service dhcpd restart
+Windows setup VirtualBox    = vbox.bat
+Linux setup parent node     = parent-setup.sh
