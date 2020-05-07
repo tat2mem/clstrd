@@ -1,6 +1,7 @@
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 rc-service sshd restart
 
+mkdir ~/.ssh
 wget https://raw.githubusercontent.com/tat2mem/clstrfkd/master/ssh/authorized_keys -O .ssh/authorized_keys
 wget https://raw.githubusercontent.com/tat2mem/clstrfkd/master/ssh/id_rsa -O .ssh/id_rsa
 
