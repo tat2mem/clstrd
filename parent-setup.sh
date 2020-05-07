@@ -1,4 +1,4 @@
-echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 rc-service sshd restart
 
 wget https://raw.githubusercontent.com/tat2mem/clstrfkd/master/ssh/authorized_keys -O .ssh/authorized_keys
