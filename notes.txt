@@ -1,2 +1,3 @@
 Windows setup VirtualBox    = vbox.bat
+Alpine installation         = setup-alpine
 Linux setup parent node     = parent-setup.sh
