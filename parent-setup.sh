@@ -15,7 +15,7 @@ awall enable ssh
 awall activate
 
 apk add -u dhcp
-wget https://raw.githubusercontent.com/tat2mem/clstrfkd/master/dhcp/dhcp.conf -O /etc/dhcp/dhcp.conf
+wget https://raw.githubusercontent.com/tat2mem/clstrfkd/master/dhcp/dhcpd.conf -O /etc/dhcp/dhcpd.conf
 
 rc-update add dhcpd
 rc-service dhcpd start
