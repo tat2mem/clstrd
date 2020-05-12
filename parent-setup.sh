@@ -20,4 +20,3 @@ wget https://raw.githubusercontent.com/tat2mem/clstrfkd/master/dhcp/dhcpd.conf -
 
 rc-update add dhcpd
 rc-service dhcpd start
-rc-service dhcpd restart
